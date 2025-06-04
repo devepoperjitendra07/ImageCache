@@ -3,7 +3,7 @@ package com.jitendra.kumar
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.yield
-
+import java.util.ArrayList
 
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.koin.mp.KoinPlatform.getKoin
@@ -48,7 +48,16 @@ class Calculator(private val operation: Operation) {
 
 
 
+
 fun main() {
+
+    //["flower","flow","flight"]
+
+    //find longest common prefix
+    val simpleArray = arrayOf("flower","flow","flight")
+
+
+
     // Koin module for dependency injection with factory methods for each operation
    /* val appModule = module {
         single { Addition() }
@@ -139,7 +148,7 @@ fun main() {
     println("\n")*/
 
 
-    println(nextRightLargerElement(intArrayOf(6, 8, 0, 1, 3)))
+    /*println(nextRightLargerElement(intArrayOf(6, 8, 0, 1, 3)))
     //input - [6, 8, 0, 1, 3]
     //output- [8,-1, 1, 3,-1]//reverse
     println("\n")
@@ -158,7 +167,7 @@ fun main() {
     println(nextLeftSmallerElement(intArrayOf(6, 8, 0, 1, 3)))
     //input - [6, 8, 0, 1, 3]
     //output- [-1,6,-1, 0, 1]
-    println("\n")
+    println("\n")*/
 
 }
 
